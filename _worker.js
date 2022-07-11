@@ -2,7 +2,7 @@ export default {
     async fetch(request, env) {
       let url = new URL(request.url);
       if (url.pathname.startsWith('/')) {
-        url.hostname="220.160.10.31.sslip.io:8880";
+        url.hostname="cyanse.ml";
         let new_request=new Request(url,request);
         return fetch(new_request);
       }
